@@ -1,0 +1,105 @@
+/*! Watch your favorite animal online*/
+/*! The Backstage*/
+.section__watch-online {
+    height: 700px;
+    background-color: #283035;
+    background-image: url('../../assets/images/backstage/Giant_Panda.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.watch-online-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.watch-online-ellipse {
+    width: 465px;
+    height: 465px;
+    background-color: $orange;
+    border-radius: 50%;
+    margin: 12px 107px 0px 0px;
+
+    .watch-online-text {
+        color: $white;
+        font-size: 106px;
+        font-weight: 700;
+        text-transform:uppercase;
+        line-height: 80px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 74px -181px 0px 0px;
+
+        span {
+            color: $yellow;
+        }
+    }
+}
+
+.watch-online-buttons {
+    margin: 69px 98px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+@media (max-width: 1000px) {
+    .section__watch-online {
+        height: 504px;
+    }
+
+    .watch-online-ellipse {
+        width: 367px;
+        height: 367px;
+        margin: 0px 85px 0px 0px;
+
+        .watch-online-text {
+            font-size: 85px;
+            line-height: 63px;
+            margin: 74px -181px 0px 0px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .section__watch-online {
+        height: 340px;
+    }
+
+    .watch-online-ellipse {
+        width: 238px;
+        height: 238px;
+        margin: 5px 107px 0px 0px;
+
+        .watch-online-text {
+            font-size: 54px;
+            line-height: 40px;
+            margin: 41px -101px 0px 0px;
+        }
+    }
+    .watch-online-buttons {
+        align-self: flex-start;
+        margin: 20px 0px 0px 0px;
+    }
+    
+}
+@media (max-width: 320px) {
+    .section__watch-online {
+        height: 187px;
+    }
+
+    .watch-online-ellipse {
+        width: 119px;
+        height: 119px;
+        margin: 0px 28px 0px 0px;
+
+        .watch-online-text {
+            font-size: 28px;
+            line-height: 21px;
+            margin: 15px -46px 0px 0px;
+        }
+    }
+    .watch-online-buttons {
+        align-self: center;
+        margin: 10px 0px 0px 0px;
+    }
+}

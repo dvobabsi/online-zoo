@@ -1,0 +1,108 @@
+/*! backstage */
+.section__backstage {
+    background-image: url('../../assets/images/backstage/flower_foto1.jpg');
+    background-repeat: no-repeat;
+    background-position: 103.1% 13px;
+}
+
+
+.backstage-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 141px 0px 120px 0px;
+}
+
+.backstage-left {
+    height: 403px;
+    width: 609px;
+    background-color: #283035;
+    background-image: url('../../assets/images/backstage/bamboo-cap.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.backstage-right {
+    margin-left: 87px;
+
+    .backstage-title {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 58px;
+        letter-spacing: 0em;
+    }
+    .backstage-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        margin-top: 20px;
+    }
+    .backstage-little-title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        margin-top: 55px;
+    }
+    .backstage-little-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        margin-top: 33px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section__backstage {
+        background-image: none;
+    }
+
+    .backstage-box {
+        padding: 130px 0px 120px 0px;
+    }
+
+    .backstage-left {
+        height: 408px;
+        width: 455px;
+        background-size: cover;
+    }
+
+    .backstage-right {
+        margin-top: 1px;
+        margin-left: 32px;
+    
+        .backstage-title {
+            font-size: 48px;
+            margin-block-start: -12px;
+        }
+        .backstage-text {
+            font-size: 16px;
+            line-height: 21px;
+        }
+        .backstage-little-title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .backstage-little-text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .backstage-box {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 120px 0px 120px 0px;
+    }
+    .backstage-left {
+        display: none;
+    }
+}
+@media (max-width: 320px) {
+    .backstage-box {
+        padding: 80px 0px 120px 0px;
+    }
+}

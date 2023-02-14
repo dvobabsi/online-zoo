@@ -1,0 +1,206 @@
+/*! Pets*/
+.section__pets {
+    background-image: url('../../assets/images/slaider/left.jpg'), url('../../assets/images/slaider/right.jpg');
+    background-repeat: no-repeat;
+    background-position: -3% bottom, 104% bottom;
+    background-size: auto auto, auto auto;
+}
+
+.pets-box {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0px 0px 0px;
+
+    .pets-buttons {
+        margin: 76px auto 99px auto;
+    }
+}
+
+.pets-slider-catrs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .button-left, .button-right{
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        height: 62px;
+        width: 62px;
+        border-radius: 50%;
+        background-color: $orange;
+        position: absolute;
+        transition: 1s;
+        &:hover {
+            background-color: $orange_hover;
+            transform: scale(1.1);
+        }
+        &:active {
+            background-color: $orange_active;
+            transform: scale(1.1);
+        }
+    }
+    .button-left {
+        left: -81px;
+    }
+    .button-right {
+        right: -81px;
+    }
+
+    .pets-slider {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 27px;
+        row-gap: 16px;
+
+        .cart {
+            border: 2px solid $orange;
+            border-radius: 5px;
+            height: 366px;
+            width: 366px;
+            transition: 1s;
+
+            &:hover {
+                // transform: scale(1.05);
+                height: 426px;
+                .pat-description {
+                    transform: scale(1.05);
+                    opacity: 1;
+                }
+            }
+
+            .pat-description {
+                display: flex;
+                justify-content: space-between;
+                padding: 7px 12px 0px 14px;
+                opacity: 0;
+                transition: all 2s ease;
+            }
+        
+            h4 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 18px;
+                letter-spacing: 0em;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .section__pets {
+        background-size: 140px auto, 220px auto;
+    }
+
+    .pets-slider-catrs {
+        .button-left {
+            left: 330px;
+        }
+        .button-right {
+            right: 330px;
+        }
+    }
+
+    .pets-slider-catrs {
+        .pets-slider {
+            row-gap: 100px;
+    
+            .cart {
+                height: 354px;
+                width: 294px;
+                transition: none;
+    
+                &:hover {
+                    height: 354px;
+                    .pat-description {
+                        opacity: 1;
+                    }
+                }
+                .pet-img>img {
+                    height: 294px;
+                    width: 294px;
+                }
+    
+                .pat-description {
+                    opacity: 1;
+                    transition: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .section__pets {
+        background-size: 125px auto, 190px auto;
+    }
+
+    .pets-slider-catrs {
+        .button-left {
+            left: 210px;
+        }
+        .button-right {
+            right: 210px;
+        }
+    }
+
+    .pets-slider-catrs {
+        .pets-slider {
+            grid-template-columns: auto auto;
+    
+            .cart {
+                height: 332px;
+                width: 285px;
+                transition: none;
+    
+                &:hover {
+                    height: 354px;
+                    .pat-description {
+                        opacity: 1;
+                    }
+                }
+                .pet-img>img {
+                    height: 285px;
+                    width: 285px;
+                }
+    
+                .pat-description {
+                    opacity: 1;
+                    transition: none;
+                }
+            }
+            .cart:nth-last-child(-n+2) {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .section__pets {
+        background-size: 72px auto, 120px auto;
+    }
+
+    .pets-slider-catrs {
+        .button-left {
+            display: none;
+        }
+        .button-right {
+            display: none;
+        }
+    }
+    .pets-slider-catrs {
+        .pets-slider {
+            grid-template-columns: auto;
+        }
+    }
+}
+

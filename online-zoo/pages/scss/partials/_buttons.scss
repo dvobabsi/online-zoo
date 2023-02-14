@@ -1,0 +1,61 @@
+/* !Buttons*/
+
+.orange-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 27px;
+    background-color: $orange;
+    height: 54px;
+    width: 298px;
+
+    &:hover {
+        background-color: $orange_hover;
+    }
+    &:active {
+        background-color: $orange_active;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform:uppercase;
+    }
+}
+
+.orange-button-cub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: $orange;
+    height: 54px;
+    width: 298px;
+
+    &:hover {
+        background-color: $orange_hover;
+    }
+    &:active {
+        background-color: $orange_active;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform:uppercase;
+    }
+}

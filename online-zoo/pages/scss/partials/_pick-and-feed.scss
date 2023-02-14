@@ -1,0 +1,328 @@
+/*! Pick and feed a friend*/
+.section__pick-and-feed {
+    background-color: $orange_bg;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.pick-and-feed-box {
+    background-color: $wight_bg;
+    border-radius: 20px;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 59px;
+
+    .pick-and-feed-text-container {
+        margin: 0px 96px 0px 97px;
+
+        .pick-and-feed-title {
+            color: $orange;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 58px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 40px 0px 0px 0px;
+        }
+        .pick-and-feed-big-text {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 31px 0px 0px 0px;
+        }
+        .pick-and-feed-bolt-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 39px 0px 0px 0px;
+        }
+        .pick-and-feed-little-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 10px 0px 0px 0px;
+        }
+        .pick-and-feed-little-title {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 40px 0px 0px 0px;
+        }
+    }
+    
+    .pick-and-feed-turn {
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        margin: 38px 0px 0px 0px;
+        
+        .turn-arrow {
+            width: 71px;
+            height: 37px;
+            margin: 62px 29px 0px 30px;
+            padding: 0px 0px 0px 0px;
+            background-image: url('../../assets/images/pay/icons/Vector.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 69px 35px;
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 168px;
+            height: 168px;
+            background-color: $white;
+            border: 1px solid $orange;
+            border-radius: 5px;
+            
+        }
+        .pay {
+            background-image: url('../../assets/images/pay/icons/pay.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .monkey {
+            background-image: url('../../assets/images/pay/icons/monkey.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .zoo {
+            background-image: url('../../assets/images/pay/icons/zoo.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        p {
+            width: 168px;
+            margin: 30px 0px 0px 0px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+        }
+    }
+    .pick-and-feed-buttons {
+
+        margin: 61px auto 0px auto;
+    }
+}
+
+@media (max-width: 1000px) {
+}
+@media (max-width: 640px) {
+    .section__pick-and-feed {
+        background-color: $orange_bg;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    
+    .pick-and-feed-box {
+        background-color: $wight_bg;
+        border-radius: 20px;
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 59px;
+    
+        .pick-and-feed-text-container {
+            margin: 0px 18px 0px 18px;
+    
+            .pick-and-feed-title {
+                font-size: 42px;
+                line-height: 50px;
+                padding: 40px 0px 0px 0px;
+            }
+            .pick-and-feed-big-text {
+                font-family: Roboto;
+                font-size: 22px;
+                line-height: 26px;
+                padding: 31px 0px 0px 0px;
+            }
+            .pick-and-feed-bolt-text {
+                padding: 39px 0px 0px 0px;
+            }
+            .pick-and-feed-little-text {
+                padding: 10px 0px 0px 0px;
+            }
+            .pick-and-feed-little-title {
+                padding: 40px 0px 0px 0px;
+            }
+        }
+        
+        .pick-and-feed-turn {
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+            column-gap: 44px;
+            margin: 37px 0px 0px 0px;
+            position: relative;
+            
+            .turn-arrow {
+                width: 89px;
+                height: 29px;;
+                background-image: url('../../assets/images/pay/icons/arrow.svg');
+                background-size: 89px 29px;
+                position: absolute;
+            }
+            .arrow-left {
+                margin: -16px 0px 0px -225px;
+            }
+            .arrow-right {
+                margin: -15px -167px 0px 38px;
+            }
+            .img {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 168px;
+                height: 168px;
+                background-color: $white;
+                border: 1px solid $orange;
+                border-radius: 5px;
+                
+            }
+            .pay {
+                background-image: url('../../assets/images/pay/icons/pay.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .monkey {
+                background-image: url('../../assets/images/pay/icons/monkey.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .zoo {
+                background-image: url('../../assets/images/pay/icons/zoo.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0px 0px;
+            }
+            p {
+                width: 168px;
+                margin: 30px 0px 0px 0px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+            }
+        }
+        .pick-and-feed-buttons {
+    
+            margin: 61px auto 0px auto;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .section__pick-and-feed {
+        background-color: $orange_bg;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    
+    .pick-and-feed-box {
+        background-color: $wight_bg;
+        border-radius: 20px;
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 59px;
+    
+        .pick-and-feed-text-container {
+            margin: 0px 18px 0px 18px;
+    
+            .pick-and-feed-title {
+                font-size: 42px;
+                line-height: 50px;
+                padding: 40px 0px 0px 0px;
+            }
+            .pick-and-feed-big-text {
+                font-family: Roboto;
+                font-size: 22px;
+                line-height: 26px;
+                padding: 31px 0px 0px 0px;
+            }
+            .pick-and-feed-bolt-text {
+                padding: 39px 0px 0px 0px;
+            }
+            .pick-and-feed-little-text {
+                padding: 10px 0px 0px 0px;
+            }
+            .pick-and-feed-little-title {
+                padding: 40px 0px 0px 0px;
+            }
+        }
+        
+        .pick-and-feed-turn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+            column-gap: 44px;
+            margin: 38px 0px 0px 0px;
+            position: relative;
+            
+            .turn {
+                align-self: center;
+            }
+            .turn-arrow {
+                width: 89px;
+                height: 29px;;
+                background-image: url('../../assets/images/pay/icons/arrow.svg');
+                background-size: 89px 29px;
+                position: absolute;
+                transform: rotate(90deg);
+                align-self: flex-end;
+            }
+            .arrow-left {
+                margin: -311px 17px 0px 0px;
+            }
+            .arrow-right {
+                margin: 0px 16px 0px 0px;
+                top: 414px;
+            }
+            .img {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 168px;
+                height: 168px;
+                background-color: $white;
+                border: 1px solid $orange;
+                border-radius: 5px;
+                
+            }
+            .pay {
+                background-image: url('../../assets/images/pay/icons/pay.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .monkey {
+                background-image: url('../../assets/images/pay/icons/monkey.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .zoo {
+                background-image: url('../../assets/images/pay/icons/zoo.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0px 0px;
+            }
+            p {
+                width: 168px;
+                margin: 30px 0px 0px 0px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+            }
+        }
+        .pick-and-feed-buttons {
+    
+            margin: 61px auto 0px auto;
+        }
+    }
+}
+
